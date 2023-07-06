@@ -1,0 +1,293 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
+:root {
+    --font-heading: crimson;
+    --para-font: #777777;
+    --black: #222222;
+    --bg: rgba(237, 28, 70);
+    --white: #fff;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: -10;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+.img img{
+     margin-top:-219px;
+     margin-left:700px;
+     width:450px;
+}
+
+html {
+    font-size: 59.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.header {
+    width: 100%;
+    height:100vh;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    padding: 8rem 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: 800;
+    color:red;
+}
+
+.logo span {
+    color: var(--bg);
+}
+
+nav .links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+nav .links a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--bg);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s;
+}
+
+nav .links a:hover::after {
+    width: 100%;
+}
+
+nav #menu-btn,
+nav #close {
+    color: var(--white);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header .content {
+    padding: 1.0px 6%;
+    color:white;
+}
+
+.header .content h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+}
+
+.header .content h1 {
+    font-size: 7rem;
+    letter-spacing: 2px;
+    padding:-10rem 0;
+    display:fit;
+    margin-top:250px;
+    margin-left:20px;
+    font-weight:300;
+}
+
+.btn {
+    padding: 1rem 5rem;
+    margin: -30rem 0;
+    cursor: pointer;
+    color:white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0.3rem solid var(--font-heading);
+    border-radius: 8px;
+    background: none;
+    transition: all linear 0.5s;
+	margin-top:-50px;
+
+}
+
+.btn:hover {
+    background: var(--bg);
+    color: var(--white);
+    transform: translate(0px, -3px);
+}
+body{
+	background-color:black;
+}
+
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about .container .image {
+    flex-basis: 35%;
+    background: url(./img/about.webp);
+    background-size:20%;
+    background-repeat: no-repeat;
+    padding: 0rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgb(195, 193, 193);
+}
+
+.about .container .about-content {
+    flex-basis: 40%;
+}
+
+.about .container .about-content h1 {
+    font-size: 7rem;
+    color: var(--font-heading);
+    padding: 3rem 0;
+}
+
+.about .container .about-content h3 {
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 3rem 0;
+}
+
+.about .container .about-content p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color:white;
+    line-height: 1.5;
+}
+
+
+.heading {
+    font-size: 6rem;
+    text-align: center;
+	color:red;
+}
+
+.heading-description {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+	color:white;
+}
+
+.team .container {
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1rem;
+    padding: 5rem 0;
+}
+
+.team .container .team-box .team-content {
+    box-shadow: 3px 3px 10px rgba(179, 179, 179, 0.2);
+    text-align: center;
+    width: 70%;
+    position:relative;
+    top: 30%;
+    z-index: 2;
+    background: var(--white);
+    left: 10%;
+    border-radius: 0.8rem;
+}
+.team .container .team-box .team-content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1.2rem 0;
+
+}
+
+.team .container .team-box .team-content p {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+	color:red;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    padding: 2.5rem 0;
+}
+.contact .container .contact-box {
+    border: 0.2rem solid red;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+	color:white;
+}
+
+}
+.contact .container .contact-box div i {
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color:white;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    border-radius: 100%;
+}
+.contact .container .contact-box div h2 {
+    font-size: 1.8rem;
+}
+.contact .container .contact-box div h2 span {
+    font-weight: 300;
+	color:red;
+}
+.contact .container .contact-box div p {
+    font-size: 1.5rem;
+}
+.contact .container .contact-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.contact .container .contact-box div i {
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    border-radius: 100%;
+}
+

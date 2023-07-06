@@ -1,0 +1,55 @@
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>login</title>
+<link rel="stylesheet" href="login.css">	
+<script>
+    function auth()
+	{ 
+	    var gemail = document.getElementById("email").value;
+		var gpassword = document.getElementById("password").value;
+		if(gemail=="admin@login" && gpassword=="admin@pass"){
+		      window.open("main1.html");
+		}
+		else{
+			alert("Invalid credentials");
+        }  	
+	}	 
+</script>
+	
+</head>
+<body>
+<nav>
+<h1>LATHA'S<br>CLOUD KITCHEN</h1>
+	 
+</nav> 
+<marquee style="
+background:black;
+behavior:alternate;
+color:white;
+font-size:x-large;
+font-family:sans-serif;
+width:100%;">WELCOME TO OUR KITCHEN , PLEASE LOGIN TO BOOK YOUR MEAL.</marquee>
+<div class="center">
+
+
+<form>
+  <h1> LOGIN </h1>
+    <div class="input-group">
+	  <input type="text" name="loginUser" id="email" required />
+	  <label for="loginUser">email</label>
+    </div>	
+	<div class="input-group">
+	  <input type="password" 
+	         name="loginpassword"
+			 id="password"
+			 required 
+			 />
+	  <label >password</label>
+	</div>
+	<input type="submit" value="login"  onclick="auth();" />
+  </form>
+</div>
+
+</body>
+</html>  
